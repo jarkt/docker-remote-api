@@ -1,6 +1,6 @@
-FROM ubuntu
+FROM alpine
 
-RUN apt-get update && apt-get install -yq socat
+RUN apk update && apk add socat
 
 EXPOSE 2375
 
